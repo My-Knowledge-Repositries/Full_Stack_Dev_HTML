@@ -30,24 +30,29 @@
 <hr>
 
 <!--formatting tags-->
-<p> <b>lorem</b> <i>ipsum</i> <u>dolor</u> <mark>sit</mark> <s>amet, consectetur</s> <del>adipisicing elit.</del> 10<sup>2</sup> Eos et minus, 20<sub>3</sub> nulla sed sequi temporibus veniam. A
+<p><b>lorem</b> <i>ipsum</i> <u>dolor</u>
+    <mark>sit</mark>
+    <s>amet, consectetur</s>
+    <del>adipisicing elit.</del>
+    10<sup>2</sup> Eos et minus, 20<sub>3</sub> nulla sed sequi temporibus veniam. A
     assumenda cumque deserunt doloribus expedita labore libero necessitatibus perferendis totam voluptas! Recusandae,
-    sint!</p>
+    sint!
+</p>
 
 <!--images-->
 <!--https://cdn.pixabay.com/photo/2017/07/04/09/34/husky-2470443_1280.jpg-->
 <!-- https://cdn.pixabay.com/photo/2017/08/22/23/45/husky-2671006_960_720.jpg -->
 <img
         alt="image"
-        width="250"
         loading="lazy"
-        src="https://loremflickr.com/640/360"/>
+        src="https://loremflickr.com/640/360"
+        width="250"/>
 <div style="height: 5000px;"></div>
 <img
         alt="image"
-        width="250"
         loading="lazy"
-        src="https://cdn.pixabay.com/photo/2017/08/22/23/45/husky-2671006_960_720.jpg"/>
+        src="https://cdn.pixabay.com/photo/2017/08/22/23/45/husky-2671006_960_720.jpg"
+        width="250"/>
 <hr>
 <!--anchor-->
 <a href="about.html" target="_self">Show more</a><br>
@@ -59,17 +64,112 @@
 <hr>
 <!--Navigation-->
 <nav>
-    <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#gallery">Gallery</a> | <a href="#contact">Contact Us</a>
+    <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#gallery">Gallery</a> | <a href="#contact">Contact
+    Us</a>
 </nav>
 <hr>
 
-<div style="height: 80vh; background-color: green" id="home">Home</div>
-<div style="height: 80vh; background-color: saddlebrown" id="about">About</div>
-<div style="height: 80vh; background-color: orange" id="gallery">Gallery</div>
-<div style="height: 80vh; background-color: blue" id="contact">Contact Us</div>
+<div id="home" style="height: 80vh; background-color: green">Home</div>
+<div id="about" style="height: 80vh; background-color: saddlebrown">About</div>
+<div id="gallery" style="height: 80vh; background-color: orange">Gallery</div>
+<div id="contact" style="height: 80vh; background-color: blue">Contact Us</div>
 <a href="#">back to top</a>
 <hr>
 <!--video-->
-<video src="video/@HGRambo%20%20-Racks%20(Official%20Music%20Video)%20%5BNo%20Copyright%20©%20Rap%5D.mp4" controls autoplay muted loop width="500"></video>
+<video autoplay controls
+       loop muted src="video/@HGRambo%20%20-Racks%20(Official%20Music%20Video)%20%5BNo%20Copyright%20©%20Rap%5D.mp4"
+       width="500"></video>
+<a download="" href="video/@HGRambo%20%20-Racks%20(Official%20Music%20Video)%20%5BNo%20Copyright%20©%20Rap%5D.mp4">download</a>
+<hr>
+<!--iframe-->
+<iframe height="250" src="https://developersstack.com/#/process/home" width="500"></iframe>
+<hr>
+<iframe
+        height="250"
+        src="https://developersstack.com"
+        width="500"></iframe>
+<hr>
+<!--dom sanitizer-->
+<iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        frameborder="0"
+        height="409"
+        src="https://www.youtube.com/embed/X48VuDVv0do"
+        title="Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]"
+        width="727"></iframe>
+<hr>
+<!--table-->
+<table border="1">
+    <caption>Customer Table</caption>
+    <colgroup>
+        <col span="3" style="background-color: green">
+    </colgroup>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>name</th>
+        <th>address</th>
+        <th>contact</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">Nimal</td>
+        <td>Colombo</td>
+        <td colspan="2">011</td>
+    </tr>
+    <tr>
+        <td>Banda</td>
+        <td>Panadura</td>
+        <td>038</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            Footer
+        </td>
+    </tr>
+    </tfoot>
+</table>
+<hr>
+<!--Marquee-->
+<marquee behavior="" direction="up"><span>Headline:lorem</span></marquee>
+<marquee behavior="alternate" direction="left"><span>Headline:lorem</span></marquee>
+<marquee behavior="" direction="right"><span>Headline:lorem</span></marquee>
+<marquee behavior="" direction="down"><span>Headline:lorem</span></marquee>
+<hr>
+<!--list(ol, ul, li)-->
+<ul type="square">
+    <li>Java</li>
+    <li>Php</li>
+    <li>Kotlin</li>
+    <li>C#</li>
+    <li>Go-Lang</li>
+</ul>
+<hr>
+<ol type="I">
+    <li>Java</li>
+    <li>Php</li>
+    <li>Kotlin</li>
+    <li>C#</li>
+    <li>Go-Lang</li>
+</ol>
+<!--inputgit add .-->
+<input type="text" placeholder="hello type here">
+<input type="search" placeholder="hello type here">
+<input type="password">
+<select>
+    <option disabled value="A">Apple</option>
+    <option selected value="B">Ball</option>
+    <option value="C">Cat</option>
+</select>
+<br>
+<fieldset>
+    <legend>Gender</legend>
+    male: <input type="radio" checked name="gen"><br>
+    Female <input type="radio" name="gen">
+</fieldset>
 </body>
 </html>
